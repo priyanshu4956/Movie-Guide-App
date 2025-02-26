@@ -6,7 +6,7 @@ const inputBox = document.querySelector('.inputBox');
 const getMovieInfo = async(movie) => {
     try {
         const myAPIKey = "f6f5f7b1";
-    const url = `http://www.omdbapi.com/?apikey=${myAPIKey}&t=${movie}`;
+    const url = `https://www.omdbapi.com/?apikey=${myAPIKey}&t=${movie}`;
 
     const response = await fetch(url);
 
@@ -81,14 +81,6 @@ const handleFormSubmission = (e) => {
        showErrorMessage("Enter movie name to get movie information");
     }
 }
-
-
-// const imageElement = document.createElement('img');
-// // img.src = 'search.gif';
-// imageElement.classList.add('image-search');
-// imageElement.innerHTML = `<img> src="Search.gif"/>`
-// movieContainer.appendChild(imageElement);
-
 
 
 // Adding event listener to search form
